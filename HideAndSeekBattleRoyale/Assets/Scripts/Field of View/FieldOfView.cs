@@ -42,24 +42,18 @@ public class FieldOfView : MonoBehaviour {
         if (lastPos != transform.position) {
             DrawFieldOfView();
         }
-        
-        // how to check if someone left
-        
-        // 1. who was in last time?
-        // 2. 
-        
-        lastTargets = visibleTargets;
-        FindVisibleTargets();
 
-        lastPos = transform.position;
-        foreach (var target in lastTargets) {
-            bool containsTarget = visibleTargets.Any(item => ReferenceEquals(item, target));
-            if (!containsTarget) {
+        lastTargets = visibleTargets;
+
+        foreach (Transform lastTarget in lastTargets) {
+            Transform target = visibleTargets.First(item => item.GetInstanceID() == lastTarget.GetInstanceID());
+            if (target != null) {
                 target.GetComponent<Visibility>().IsVisible = false;
             }
         }
 
-        
+        FindVisibleTargets();
+
         foreach (Transform target in visibleTargets) {
             if (target.GetComponent<Visibility>() != null) {
                 target.GetComponent<Visibility>().IsVisible = true;

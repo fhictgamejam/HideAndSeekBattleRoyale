@@ -12,6 +12,7 @@
         </e>
         <e p="Jasper" t="Include">
           <e p="Scripts" t="Include">
+            <e p="Attack.cs" t="Include" />
             <e p="BuildingEnter.cs" t="Include" />
           </e>
         </e>
@@ -35,6 +36,11 @@
         <e p="Shaders" t="Include">
           <e p="Stencil Mask.shader" t="Include" />
           <e p="Stencil Standard.shader" t="Include" />
+        </e>
+        <e p="Teun" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="HideAndSeekBattleRoyale.sln" t="IncludeFlat" />
