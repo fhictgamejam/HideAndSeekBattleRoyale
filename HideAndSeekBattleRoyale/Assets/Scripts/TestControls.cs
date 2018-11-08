@@ -21,15 +21,15 @@ public class TestControls : MonoBehaviour
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
-		else if (Input.GetKeyDown(KeyCode.S))
+		if (Input.GetKeyDown(KeyCode.S))
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 90, 0);
 		}
-		else if (Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKeyDown(KeyCode.D))
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 0, 0);
 		}
-		else if (Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKeyDown(KeyCode.W))
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 270, 0);
 		}
