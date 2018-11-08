@@ -21,12 +21,14 @@
           <e p="DisableOnStart.cs" t="Include" />
           <e p="Field of View" t="Include">
             <e p="FieldOfView.cs" t="Include" />
+            <e p="Light.cs" t="Include" />
+            <e p="Visibility.cs" t="Include" />
           </e>
           <e p="TestControls.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="Stencil Mask.shader" t="Include" />
-          <e p="Stencil Object.shader" t="Include" />
+          <e p="Stencil Standard.shader" t="Include" />
         </e>
       </e>
       <e p="HideAndSeekBattleRoyale.sln" t="IncludeFlat" />
