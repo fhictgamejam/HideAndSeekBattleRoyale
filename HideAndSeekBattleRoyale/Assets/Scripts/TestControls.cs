@@ -12,30 +12,22 @@ public class TestControls : MonoBehaviour
 	void Update()
 	{
 		Vector3 move = new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
-		weaponHolder.transform.rotation = new Quaternion(0, WeaponRotation(), 0, 0);
-		transform.Translate(move);
-	}
-	private float WeaponRotation()
-	{
 		if (Input.GetKeyDown(KeyCode.A))
 		{
-			return 180;
+			weaponHolder.transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
 		else if (Input.GetKeyDown(KeyCode.S))
 		{
-			return 90;
+			weaponHolder.transform.localRotation = Quaternion.Euler(0, 90, 0);
 		}
 		else if (Input.GetKeyDown(KeyCode.D))
 		{
-			return 0;
+			weaponHolder.transform.localRotation = Quaternion.Euler(0, 0, 0);
 		}
 		else if (Input.GetKeyDown(KeyCode.W))
 		{
-			return 270;
+			weaponHolder.transform.localRotation = Quaternion.Euler(0, 270, 0);
 		}
-		else
-		{
-			return weaponHolder.transform.rotation.y;
-		}
+		transform.Translate(move);
 	}
 }
