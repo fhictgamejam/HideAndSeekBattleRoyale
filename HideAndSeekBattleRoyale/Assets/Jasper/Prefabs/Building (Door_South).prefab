@@ -781,7 +781,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1853405698022116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34a94dbc535fe240aac2f6f2eecd913, type: 3}
+  m_Script: {fileID: 11500000, guid: 13cdbec72d9386e46a9fe16dcea9c563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roof: {fileID: 1559867738963952}
+  cam: {fileID: 0}
+  resizeToSize: 15
