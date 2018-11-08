@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33103325653587030}
   - component: {fileID: 23535995828171676}
   - component: {fileID: 65843230677352086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightSideDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33080177380701628}
   - component: {fileID: 23274392473547958}
   - component: {fileID: 65735724191064168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftSideDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33873532719936530}
   - component: {fileID: 23346225573258546}
   - component: {fileID: 65508012979415016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4847971106405762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 33702047968337720}
   - component: {fileID: 23358918525285480}
   - component: {fileID: 65945049985440342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 33152349300979770}
   - component: {fileID: 23634638936308316}
   - component: {fileID: 65042414022174158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 33466616868587598}
   - component: {fileID: 23410866673992356}
   - component: {fileID: 65317307920761350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 1705965545634048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35, y: 0, z: -35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.61, z: 0.3}
   m_Children:
   - {fileID: 4512590969353922}
   - {fileID: 4876349723762724}
