@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerNetworkBehaviour : MonoBehaviour {
+public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +12,11 @@ public class PlayerNetworkBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+	}
+
+	void OnStartClient()
+	{
+		Destroy (this);
 	}
 }
