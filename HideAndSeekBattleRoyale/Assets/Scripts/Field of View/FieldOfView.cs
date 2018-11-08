@@ -11,6 +11,7 @@ public class FieldOfView : MonoBehaviour {
     public LayerMask obstacleMask;
 
     [HideInInspector] public List<Transform> visibleTargets = new List<Transform>();
+    private List<Transform> lastTargets = new List<Transform>();
 
     public float meshResolution;
     public int edgeResolveIterations;
@@ -27,8 +28,6 @@ public class FieldOfView : MonoBehaviour {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-
-        StartCoroutine("FindTargetsWithDelay", .2f);
     }
 
 
@@ -43,9 +42,24 @@ public class FieldOfView : MonoBehaviour {
         if (lastPos != transform.position) {
             DrawFieldOfView();
         }
+        
+        // how to check if someone left
+        
+        // 1. who was in last time?
+        // 2. 
+        
+        lastTargets = visibleTargets;
+        FindVisibleTargets();
 
         lastPos = transform.position;
+        foreach (var target in lastTargets) {
+            bool containsTarget = visibleTargets.Any(item => ReferenceEquals(item, target));
+            if (!containsTarget) {
+                target.GetComponent<Visibility>().IsVisible = false;
+            }
+        }
 
+        
         foreach (Transform target in visibleTargets) {
             if (target.GetComponent<Visibility>() != null) {
                 target.GetComponent<Visibility>().IsVisible = true;
