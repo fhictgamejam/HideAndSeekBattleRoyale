@@ -14,6 +14,10 @@ public class Attack : MonoBehaviour
 	private bool retreiveAttack = false;
 	private Quaternion beginpoint;
 
+	private void Start()
+	{
+		this.GetComponent<Renderer>().enabled = false;
+	}
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Space) && !attack && !retreiveAttack)
