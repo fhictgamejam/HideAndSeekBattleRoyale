@@ -16,8 +16,11 @@ public class BuildingEnter : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other)
 	{
-		roof.GetComponent<Renderer>().enabled = false;
-		cam.orthographicSize = resizeToSize;
+		if (other.tag == "Player")
+		{
+			roof.GetComponent<Renderer>().enabled = false;
+			cam.orthographicSize = resizeToSize;
+		}
 	}
 	private void OnTriggerExit(Collider other)
 	{
