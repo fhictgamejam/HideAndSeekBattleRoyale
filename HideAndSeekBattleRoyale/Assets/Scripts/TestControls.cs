@@ -12,6 +12,11 @@ public class TestControls : MonoBehaviour
 	void Update()
 	{
 		Vector3 move = new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
+		RotateWeapon();
+		transform.Translate(move);
+	}
+	private void RotateWeapon()
+	{
 		if (Input.GetKeyDown(KeyCode.A))
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 180, 0);
@@ -28,6 +33,5 @@ public class TestControls : MonoBehaviour
 		{
 			weaponHolder.transform.localRotation = Quaternion.Euler(0, 270, 0);
 		}
-		transform.Translate(move);
 	}
 }
