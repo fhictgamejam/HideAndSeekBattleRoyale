@@ -10,6 +10,11 @@
         <e p="Editor" t="Include">
           <e p="FieldOfViewEditor.cs" t="Include" />
         </e>
+        <e p="Jasper" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BuildingEnter.cs" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -25,6 +30,7 @@
             <e p="Visibility.cs" t="Include" />
           </e>
           <e p="TestControls.cs" t="Include" />
+          <e p="VirtualJoystick.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="Stencil Mask.shader" t="Include" />
