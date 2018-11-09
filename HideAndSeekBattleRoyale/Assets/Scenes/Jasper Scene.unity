@@ -198,6 +198,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 50016678}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &295132247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114314792505498948, guid: 6c98e1f3ad01a5b47b8f6b8befe9261e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1488466170}
+  m_Script: {fileID: 11500000, guid: 6f790522848f11a43a983c178e173e0f, type: 3}
 --- !u!1001 &878509926
 Prefab:
   m_ObjectHideFlags: 0
@@ -295,17 +301,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114526390694195726, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
+        type: 2}
+      propertyPath: controls
+      value: 
+      objectReference: {fileID: 295132247}
     - target: {fileID: 114768709165610602, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1896596873}
-    - target: {fileID: 114768709165610602, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackTrigger
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114217177358404922, guid: 4844f370f0bb1ed42a78ac0ae4523ded, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4844f370f0bb1ed42a78ac0ae4523ded, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1488466170
@@ -347,11 +354,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 23437126214937864, guid: 6c98e1f3ad01a5b47b8f6b8befe9261e,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ef56ec09a7759fe4893c14c16eb3c6ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c98e1f3ad01a5b47b8f6b8befe9261e, type: 2}
   m_IsPrefabAsset: 0

@@ -4,27 +4,26 @@ using UnityEngine;
 
 public class BuildingEnter : MonoBehaviour {
 
-	public GameObject roof;
-	public Camera cam;
-	public float resizeToSize = 15;
-	private float cameraSize;
-
-	private void Start()
-	{
-		cameraSize = cam.orthographicSize;
-	}
+	public GameObject[] roofs;
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Player")
 		{
-			roof.GetComponent<Renderer>().enabled = false;
-			cam.orthographicSize = resizeToSize;
+			foreach (GameObject roof in roofs)
+			{
+				roof.GetComponent<Renderer>().enabled = false;
+			}
 		}
 	}
 	private void OnTriggerExit(Collider other)
 	{
-		roof.GetComponent<Renderer>().enabled = true;
-		cam.orthographicSize = cameraSize;
+		if (other.tag == "Player")
+		{
+			foreach (GameObject roof in roofs)
+			{
+				roof.GetComponent<Renderer>().enabled = true;
+			}
+		}
 	}
 }
