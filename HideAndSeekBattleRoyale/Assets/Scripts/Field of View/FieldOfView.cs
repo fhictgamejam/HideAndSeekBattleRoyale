@@ -46,11 +46,8 @@ public class FieldOfView : NetworkBehaviour {
     }
 
     void LateUpdate() {
-        if (!isLocalPlayer && isPlayer) {
-            return;
-        }
 
-        if (lastPos != transform.position) {
+        if (lastPos != transform.position && !isLocalPlayer && isPlayer) {
             DrawFieldOfView();
         }
 
