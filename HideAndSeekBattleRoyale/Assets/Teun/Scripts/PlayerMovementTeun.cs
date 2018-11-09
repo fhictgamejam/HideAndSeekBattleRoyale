@@ -6,18 +6,18 @@ using UnityEngine.Networking;
 
 public class PlayerMovementTeun : NetworkBehaviour {
 
-	public Camera cam;
+	//public Camera cam;
 
 	public float speed = 10.0f;
 
 	void Start()
 	{
-		if (isLocalPlayer) {
+		if (!isLocalPlayer) {
+			//cam.enabled = false;
 			return;
 		} 
-		else {
-			cam.enabled = false;
-		}
+
+		//cam = Camera.main;
 	}
 
 	void Update(){
@@ -28,6 +28,6 @@ public class PlayerMovementTeun : NetworkBehaviour {
 
 		float Xtranslation = CrossPlatformInputManager.GetAxis ("Horizontal") * speed * Time.deltaTime;
 		float Ytranslation = CrossPlatformInputManager.GetAxis ("Vertical") * speed * Time.deltaTime;
-		transform.Translate (Xtranslation, Ytranslation, 0);
+		transform.Translate (Xtranslation, 0, Ytranslation);
 	}
 }
