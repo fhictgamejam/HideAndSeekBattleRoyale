@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 20800589845506696}
   - component: {fileID: 81027470624258512}
   - component: {fileID: 114135578100628278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 114200186105862598}
   - component: {fileID: 114808274250124188}
   - component: {fileID: 114815462595572068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fov Test Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 4238476030945126}
   - component: {fileID: 33953302801500162}
   - component: {fileID: 23613623500391642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FOV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
