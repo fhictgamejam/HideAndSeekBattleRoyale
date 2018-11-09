@@ -399,8 +399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsVisible: 0
-  visibleMat: {fileID: 0}
-  invisibleMat: {fileID: 0}
+  visibleMat: {fileID: 2100000, guid: d6346400eeeeb05448b3aacc823e206f, type: 2}
+  invisibleMat: {fileID: 2100000, guid: 8807abccb16ebde42bcc9508988c1247, type: 2}
 --- !u!135 &135439483917666116
 SphereCollider:
   m_ObjectHideFlags: 1
