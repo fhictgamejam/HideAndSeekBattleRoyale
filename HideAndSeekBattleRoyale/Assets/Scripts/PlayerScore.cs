@@ -31,19 +31,10 @@ public class PlayerScore : MonoBehaviour
 	{
 		ScoreTime();
 	}
-	public void AddPlayerScore(List<int> gScores)
+	public void UpdateScoreBoard(List<int> gScores)
 	{
-		plScores.Clear();
-		oldPlScores = gScores;
-		if (gScores == null)
-		{
-			gScores = new List<int>();
-		}
-		else
-		{
-			plScores = gScores;
-		}
-		gScores.Add(this.score);
+		plScores = gScores;
+		plScores.Add(score);
 		InstantiateScoreFields();
 	}
 	private void InstantiateScoreFields()
@@ -74,12 +65,10 @@ public class PlayerScore : MonoBehaviour
 			timer = 0;
 			score += 2;
 		}
-		AddPlayerScore(oldPlScores);
 	}
 	public void HitOpponent()
 	{
 		score += hitOpponentReward;
-		AddPlayerScore(oldPlScores);
 	}
 	public void GetHit()
 	{
@@ -88,7 +77,6 @@ public class PlayerScore : MonoBehaviour
 		{
 			score = 0;
 		}
-		AddPlayerScore(oldPlScores);
 	}
 
 	public int GetScore()
