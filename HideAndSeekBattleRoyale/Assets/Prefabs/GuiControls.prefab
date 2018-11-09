@@ -108,7 +108,8 @@ GameObject:
   - component: {fileID: 224141277561261860}
   - component: {fileID: 222315402198623706}
   - component: {fileID: 114191882470411208}
-  - component: {fileID: 114115398457538336}
+  - component: {fileID: 114217177358404922}
+  - component: {fileID: 114526390694195726}
   m_Layer: 5
   m_Name: MobileJoystick
   m_TagString: Untagged
@@ -146,21 +147,6 @@ Transform:
   m_Father: {fileID: 224453150224877992}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114115398457538336
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725787668209646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00c3c865782347f41b6358d9fba14b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementRange: 100
-  axesToUse: 0
-  horizontalAxisName: Horizontal
-  verticalAxisName: Vertical
 --- !u!114 &114125081646314616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +202,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Attack
+--- !u!114 &114217177358404922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1725787668209646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83147773c8f83141b13df91339d91f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementRange: 100
+  axesToUse: 0
+  horizontalAxisName: Horizontal
+  verticalAxisName: Vertical
+  controls: {fileID: 0}
 --- !u!114 &114263116240507068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -295,6 +297,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71398ce7fbc3a5b4fa50b50bd54317a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114526390694195726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1725787668209646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83147773c8f83141b13df91339d91f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementRange: 100
+  axesToUse: 0
+  horizontalAxisName: Horizontal
+  verticalAxisName: Vertical
+  controls: {fileID: 0}
 --- !u!114 &114608545129376748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,8 +415,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114212771754729304}
-          m_MethodName: SetDownState
+        - m_Target: {fileID: 0}
+          m_MethodName: AttackTrigger
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

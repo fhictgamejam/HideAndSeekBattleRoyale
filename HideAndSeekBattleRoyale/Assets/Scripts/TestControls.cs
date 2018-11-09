@@ -11,27 +11,55 @@ public class TestControls : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		Vector3 move = new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
-		RotateWeapon();
+	}
+
+	public void MoveHorizontal(float dis)
+	{
+		Vector3 move = new Vector3(dis * speed * Time.deltaTime, 0, 0);
 		transform.Translate(move);
 	}
-	private void RotateWeapon()
+
+	public void MoveVertical(float dis)
 	{
-		if (Input.GetKeyDown(KeyCode.A))
+		Vector3 move = new Vector3(0, 0, dis * speed * Time.deltaTime);
+
+		transform.Translate(move);
+	}
+	public void RotateWeapon(float xval, float yval)
+	{
+		float _xval = xval;
+		float _yval = yval;
+
+		if (xval < 0)
 		{
-			weaponHolder.transform.localRotation = Quaternion.Euler(0, 180, 0);
+			_xval = xval * -1;
 		}
-		if (Input.GetKeyDown(KeyCode.S))
+		if (yval < 0)
 		{
-			weaponHolder.transform.localRotation = Quaternion.Euler(0, 90, 0);
+			_yval = yval * -1;
 		}
-		if (Input.GetKeyDown(KeyCode.D))
+		if (_xval > _yval)
 		{
-			weaponHolder.transform.localRotation = Quaternion.Euler(0, 0, 0);
+			if (xval < 0)
+			{
+				weaponHolder.transform.localRotation = Quaternion.Euler(0, 180, 0);
+			}
+			else
+			{
+				weaponHolder.transform.localRotation = Quaternion.Euler(0, 0, 0);
+			}
 		}
-		if (Input.GetKeyDown(KeyCode.W))
+		else
 		{
-			weaponHolder.transform.localRotation = Quaternion.Euler(0, 270, 0);
+			if (yval < 0)
+			{
+				weaponHolder.transform.localRotation = Quaternion.Euler(0, 90, 0);
+			}
+			else
+			{
+				weaponHolder.transform.localRotation = Quaternion.Euler(0, 270, 0);
+			}
+
 		}
 	}
 }
