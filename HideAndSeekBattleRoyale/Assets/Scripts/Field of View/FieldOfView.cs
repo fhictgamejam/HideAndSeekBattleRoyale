@@ -46,25 +46,30 @@ public class FieldOfView : NetworkBehaviour {
     }
 
     void LateUpdate() {
+        if (!isLocalPlayer && isPlayer) {
+            return;
+        }
 
-        if (lastPos != transform.position && !isLocalPlayer && isPlayer) {
+        if (lastPos != transform.position) {
             DrawFieldOfView();
         }
 
-        lastTargets = visibleTargets;
+        if (!isLocalPlayer && !isPlayer) {
+            lastTargets = visibleTargets;
 
-        foreach (Transform lastTarget in lastTargets) {
-            Transform target = visibleTargets.First(item => item.GetInstanceID() == lastTarget.GetInstanceID());
-            if (target != null) {
-                target.GetComponent<Visibility>().IsVisible = false;
+            foreach (Transform lastTarget in lastTargets) {
+                Transform target = visibleTargets.First(item => item.GetInstanceID() == lastTarget.GetInstanceID());
+                if (target != null) {
+                    target.GetComponent<Visibility>().IsVisible = false;
+                }
             }
-        }
 
-        FindVisibleTargets();
+            FindVisibleTargets();
 
-        foreach (Transform target in visibleTargets) {
-            if (target.GetComponent<Visibility>() != null) {
-                target.GetComponent<Visibility>().IsVisible = true;
+            foreach (Transform target in visibleTargets) {
+                if (target.GetComponent<Visibility>() != null) {
+                    target.GetComponent<Visibility>().IsVisible = true;
+                }
             }
         }
     }
