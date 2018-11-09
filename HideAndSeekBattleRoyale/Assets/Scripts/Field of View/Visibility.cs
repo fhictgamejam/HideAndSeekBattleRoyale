@@ -16,8 +16,9 @@ public class Visibility : NetworkBehaviour {
     private void Start() {
         meshRenderer = GetComponent<MeshRenderer>();
 
-        visibleMat = PlayerColors[Random.Range(0, PlayerColors.Count - 1)];
-        invisibleMat = PlayerInvisColors[Random.Range(0, PlayerInvisColors.Count - 1)];
+        int random = Random.Range(0, PlayerColors.Count - 1);
+        visibleMat = PlayerColors[random];
+        invisibleMat = PlayerInvisColors[random];
     }
 
     private void Update() {
