@@ -42,7 +42,7 @@ public class FieldOfView : NetworkBehaviour {
     }
 
     void LateUpdate() {
-        if ((lastPos != transform.position && isLamp) || (lastPos != transform.position && isLocalPlayer)) {
+        if ( (lastPos != transform.position/* && isLamp) || (lastPos != transform.position && isLocalPlayer*/)) {
             DrawFieldOfView();
         }
 
