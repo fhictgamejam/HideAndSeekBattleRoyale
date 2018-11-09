@@ -301,18 +301,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114526390694195726, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
+        type: 2}
+      propertyPath: controls
+      value: 
+      objectReference: {fileID: 295132247}
     - target: {fileID: 114768709165610602, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1896596873}
-    - target: {fileID: 114768709165610602, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackTrigger
-      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114115398457538336, guid: 4844f370f0bb1ed42a78ac0ae4523ded, type: 2}
+    - {fileID: 114217177358404922, guid: 4844f370f0bb1ed42a78ac0ae4523ded, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4844f370f0bb1ed42a78ac0ae4523ded, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1488466170
@@ -429,24 +429,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &2045455805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1725787668209646, guid: 4844f370f0bb1ed42a78ac0ae4523ded,
-    type: 2}
-  m_PrefabInternal: {fileID: 878509926}
---- !u!114 &2045455806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2045455805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e83147773c8f83141b13df91339d91f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementRange: 100
-  axesToUse: 0
-  horizontalAxisName: Horizontal
-  verticalAxisName: Vertical
-  controls: {fileID: 295132247}
