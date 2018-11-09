@@ -5,6 +5,10 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.Networking;
 
 public class PlayerMovementTeun : NetworkBehaviour {
+    private PlayerManager playerManager;
+
+    public AudioSource AudioSource;
+
     //public Camera StartCam;
     public Camera cam;
 
@@ -15,6 +19,10 @@ public class PlayerMovementTeun : NetworkBehaviour {
         if (!isLocalPlayer) {
             cam.enabled = false;
         }
+
+        playerManager = FindObjectOfType<PlayerManager>();
+        playerManager.Players.Add(this);
+        AudioSource = GetComponent<AudioSource>();
     }
 
     void Update() {
