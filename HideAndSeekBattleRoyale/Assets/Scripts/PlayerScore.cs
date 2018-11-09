@@ -30,7 +30,6 @@ public class PlayerScore : MonoBehaviour
 	void Update()
 	{
 		ScoreTime();
-		UpdateScoreBoard(new List<int> { 20, 10, 120 });
 	}
 	public void UpdateScoreBoard(List<int> gScores)
 	{
