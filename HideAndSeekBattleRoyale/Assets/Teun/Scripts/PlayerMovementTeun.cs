@@ -28,6 +28,6 @@ public class PlayerMovementTeun : NetworkBehaviour {
 
 		float Xtranslation = CrossPlatformInputManager.GetAxis ("Horizontal") * speed * Time.deltaTime;
 		float Ytranslation = CrossPlatformInputManager.GetAxis ("Vertical") * speed * Time.deltaTime;
-		transform.Translate (Xtranslation, Ytranslation, 0);
+		transform.Translate (Xtranslation, 0, Ytranslation);
 	}
 }
