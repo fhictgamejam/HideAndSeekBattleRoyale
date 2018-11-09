@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Networking;
 
-public class FieldOfView : MonoBehaviour {
+public class FieldOfView : NetworkBehaviour {
     public float viewRadius;
     [Range(0, 360)] public float viewAngle;
 
@@ -24,10 +25,16 @@ public class FieldOfView : MonoBehaviour {
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
 
+    private bool isPlayer;
+
     void Start() {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
+
+        if (GetComponent<Visibility>() != null) {
+            isPlayer = true;
+        }
     }
 
 
@@ -39,7 +46,8 @@ public class FieldOfView : MonoBehaviour {
     }
 
     void LateUpdate() {
-        if (lastPos != transform.position) {
+
+        if (lastPos != transform.position && !isLocalPlayer && isPlayer) {
             DrawFieldOfView();
         }
 

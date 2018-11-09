@@ -220,6 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4889670540240016}
   - component: {fileID: 114535941280481990}
+  - component: {fileID: 114250234323739896}
   m_Layer: 0
   m_Name: Lamp (2)
   m_TagString: Untagged
@@ -633,7 +634,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954951556566388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4082756826413210}
@@ -1251,7 +1252,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c6294431c9d47e4f83589f1a9acb558, type: 2}
+  - {fileID: 2100000, guid: 7b8da75573aaaa444881f21d8b887864, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1712,6 +1713,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a059e198560d2cd4796f1c6dd6ffb21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114250234323739896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479765904102402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 70
+    i1: 37
+    i2: 184
+    i3: 123
+    i4: 157
+    i5: 140
+    i6: 128
+    i7: 100
+    i8: 187
+    i9: 112
+    i10: 213
+    i11: 54
+    i12: 182
+    i13: 199
+    i14: 42
+    i15: 187
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114407719593846768
 MonoBehaviour:
   m_ObjectHideFlags: 1
