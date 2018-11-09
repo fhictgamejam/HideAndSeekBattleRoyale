@@ -15,7 +15,7 @@ public class PlayerMovementTeun : NetworkBehaviour {
     public float speed = 10.0f;
 
     void Start() {
-        Destroy(Camera.main);
+        Destroy(Camera.main.gameObject);
         if (!isLocalPlayer) {
             cam.enabled = false;
         }
