@@ -5,16 +5,11 @@
     <e p="D:\Data\Projects\S4\Gamejam!\HideAndSeekBattleRoyale\HideAndSeekBattleRoyale" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="FieldOfViewEditor.cs" t="Include" />
-        </e>
-        <e p="Jasper" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Attack.cs" t="Include" />
-            <e p="BuildingEnter.cs" t="Include" />
-          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
@@ -24,12 +19,19 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Attack" t="Include">
+            <e p="Attack.cs" t="Include" />
+          </e>
+          <e p="Buildings" t="Include">
+            <e p="BuildingEnter.cs" t="Include" />
+          </e>
           <e p="DisableOnStart.cs" t="Include" />
           <e p="Field of View" t="Include">
             <e p="FieldOfView.cs" t="Include" />
             <e p="Light.cs" t="Include" />
             <e p="Visibility.cs" t="Include" />
           </e>
+          <e p="PlayerScore.cs" t="Include" />
           <e p="TestControls.cs" t="Include" />
           <e p="VirtualJoystick.cs" t="Include" />
         </e>
@@ -37,9 +39,47 @@
           <e p="Stencil Mask.shader" t="Include" />
           <e p="Stencil Standard.shader" t="Include" />
         </e>
+        <e p="Standard Assets" t="Include">
+          <e p="CrossPlatformInput" t="Include">
+            <e p="CrossPlatformInputGuidelines.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AxisTouchButton.cs" t="Include" />
+              <e p="ButtonHandler.cs" t="Include" />
+              <e p="CrossPlatformInputManager.cs" t="Include" />
+              <e p="InputAxisScrollbar.cs" t="Include" />
+              <e p="Joystick.cs" t="Include" />
+              <e p="MobileControlRig.cs" t="Include" />
+              <e p="PlatformSpecific" t="Include">
+                <e p="MobileInput.cs" t="Include" />
+                <e p="StandaloneInput.cs" t="Include" />
+              </e>
+              <e p="TiltInput.cs" t="Include" />
+              <e p="TouchPad.cs" t="Include" />
+              <e p="VirtualInput.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="CrossPlatformInput" t="Include">
+              <e p="CrossPlatformInputInitialize.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="OpenSans" t="Include">
+              <e p="License!.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Supercyan Character Pack Free Sample" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CameraLogic.cs" t="Include" />
+            <e p="Demo.cs" t="Include" />
+            <e p="SimpleCharacterControl.cs" t="Include" />
+          </e>
+        </e>
         <e p="Teun" t="Include">
           <e p="Scripts" t="Include">
-            <e p="PlayerController.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
+            <e p="PlayerMovementTeun.cs" t="Include" />
           </e>
         </e>
       </e>
