@@ -15347,9 +15347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cdbec72d9386e46a9fe16dcea9c563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roof: {fileID: 1174618723}
-  cam: {fileID: 0}
-  resizeToSize: 15
+  roofs: []
 --- !u!65 &1186365732
 BoxCollider:
   m_ObjectHideFlags: 0
