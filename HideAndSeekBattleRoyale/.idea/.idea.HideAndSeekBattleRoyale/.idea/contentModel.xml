@@ -31,6 +31,7 @@
             <e p="Light.cs" t="Include" />
             <e p="Visibility.cs" t="Include" />
           </e>
+          <e p="Joystick.cs" t="Include" />
           <e p="PlayerScore.cs" t="Include" />
           <e p="TestControls.cs" t="Include" />
           <e p="VirtualJoystick.cs" t="Include" />
@@ -79,6 +80,7 @@
         <e p="Teun" t="Include">
           <e p="Scripts" t="Include">
             <e p="CameraController.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerMovementTeun.cs" t="Include" />
           </e>
         </e>
