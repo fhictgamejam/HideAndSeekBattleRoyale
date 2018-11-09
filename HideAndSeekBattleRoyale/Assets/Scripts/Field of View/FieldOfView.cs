@@ -32,9 +32,9 @@ public class FieldOfView : NetworkBehaviour {
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
 
-//        if (GetComponent<Visibility>()) {
-//            isPlayer = true;
-//        }
+        if (GetComponent<Visibility>() != null) {
+            isPlayer = true;
+        }
     }
 
 
@@ -46,7 +46,7 @@ public class FieldOfView : NetworkBehaviour {
     }
 
     void LateUpdate() {
-        if (!isLocalPlayer) {
+        if (!isLocalPlayer && isPlayer) {
             return;
         }
 
