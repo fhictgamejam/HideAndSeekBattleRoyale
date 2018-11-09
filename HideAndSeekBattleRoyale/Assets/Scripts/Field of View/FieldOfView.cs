@@ -22,19 +22,15 @@ public class FieldOfView : NetworkBehaviour {
 
     private Vector3 lastPos;
 
+    public bool isLamp;
+
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
-
-    private bool isPlayer;
 
     void Start() {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-
-        if (GetComponent<Visibility>() != null) {
-            isPlayer = true;
-        }
     }
 
 
@@ -46,10 +42,8 @@ public class FieldOfView : NetworkBehaviour {
     }
 
     void LateUpdate() {
-        if (lastPos != transform.position) {
-            if ((!isLocalPlayer && !isPlayer) || (isLocalPlayer)) {
-                DrawFieldOfView();
-            }
+        if ((lastPos != transform.position && isLamp) || (lastPos != transform.position && isLocalPlayer)) {
+            DrawFieldOfView();
         }
 
         lastTargets = visibleTargets;
