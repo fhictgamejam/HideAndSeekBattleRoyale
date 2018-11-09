@@ -24,18 +24,21 @@ public class Visibility : NetworkBehaviour {
         if (IsVisible && meshRenderer.sharedMaterial != visibleMat) {
             if (isLocalPlayer)
                 meshRenderer.sharedMaterial = visibleMat;
-            if (!isLocalPlayer)
+            if (!isLocalPlayer) {
                 meshRenderer.sharedMaterial = visibleMat;
-            meshRenderer.enabled = true;
+                meshRenderer.enabled = true;
+            }
+
             return;
         }
 
         if (!IsVisible && meshRenderer.sharedMaterial != invisibleMat) {
             if (isLocalPlayer)
                 meshRenderer.sharedMaterial = invisibleMat;
-            if (!isLocalPlayer)
+            if (!isLocalPlayer) {
+                meshRenderer.enabled = false;
                 meshRenderer.sharedMaterial = invisibleMat;
-            meshRenderer.enabled = false;
+            }
         }
     }
 }
