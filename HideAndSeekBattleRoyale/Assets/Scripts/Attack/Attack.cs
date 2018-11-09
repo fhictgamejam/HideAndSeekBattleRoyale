@@ -20,16 +20,20 @@ public class Attack : MonoBehaviour
 	}
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && !attack && !retreiveAttack)
+		if (attack || retreiveAttack)
+		{
+			DoAttack();
+		}
+	}
+
+	public void AttackTrigger()
+	{
+		if (!attack && !retreiveAttack)
 		{
 			this.GetComponent<Renderer>().enabled = true;
 			beginpoint = this.transform.rotation;
 			attack = true;
 			retreiveAttack = true;
-		}
-		if (attack || retreiveAttack)
-		{
-			DoAttack();
 		}
 	}
 	private void OnTriggerEnter(Collider other)
