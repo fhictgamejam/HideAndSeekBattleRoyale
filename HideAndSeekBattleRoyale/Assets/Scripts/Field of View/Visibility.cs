@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class Visibility : MonoBehaviour {
+public class Visibility : NetworkBehaviour {
     public bool IsVisible;
 
     private MeshRenderer meshRenderer;
@@ -14,12 +15,18 @@ public class Visibility : MonoBehaviour {
 
     private void Update() {
         if (IsVisible && meshRenderer.sharedMaterial != visibleMat) {
-            meshRenderer.sharedMaterial = visibleMat;
+            if (isLocalPlayer)
+                meshRenderer.sharedMaterial = visibleMat;
+            if (!isLocalPlayer)
+                meshRenderer.enabled = true;
             return;
         }
 
         if (!IsVisible && meshRenderer.sharedMaterial != invisibleMat) {
-            meshRenderer.sharedMaterial = invisibleMat;
+            if (isLocalPlayer)
+                meshRenderer.sharedMaterial = invisibleMat;
+            if (!isLocalPlayer)
+                meshRenderer.enabled = false;
         }
     }
 }
