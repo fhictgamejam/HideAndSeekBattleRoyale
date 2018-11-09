@@ -6,18 +6,23 @@ using UnityEngine.Networking;
 
 public class PlayerMovementTeun : NetworkBehaviour {
 
-	//public Camera cam;
+	//public Camera StartCam;
+	public Camera cam;
 
 	public float speed = 10.0f;
 
 	void Start()
 	{
 		if (!isLocalPlayer) {
-			//cam.enabled = false;
-			return;
+			cam.enabled = false;
 		} 
+		if (isServer) {
+			Destroy (Camera.main);
+		}
 
-		//cam = Camera.main;
+		/*if (StartCam != null) {
+			Destroy (StartCam);
+		}*/
 	}
 
 	void Update(){
