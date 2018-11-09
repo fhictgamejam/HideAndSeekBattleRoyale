@@ -53,6 +53,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 				m_VerticalVirtualAxis.Update(delta.y);
 				controls.MoveVertical(delta.y);
 			}
+			controls.RotateWeapon(-delta.x, delta.y);
 		}
 
 		void CreateVirtualAxes()
