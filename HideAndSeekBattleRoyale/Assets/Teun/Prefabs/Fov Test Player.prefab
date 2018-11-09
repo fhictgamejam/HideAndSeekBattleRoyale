@@ -259,7 +259,7 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1744354631647262}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &82661435343901504
 AudioSource:
   m_ObjectHideFlags: 1
@@ -378,6 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdbf04e9fe5eae34795e8e961c9eaa04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioSource: {fileID: 82661435343901504}
   cam: {fileID: 20800589845506696}
   speed: 4.9
 --- !u!114 &114237210409023658

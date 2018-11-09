@@ -21,8 +21,12 @@ public class PlayerMovementTeun : NetworkBehaviour {
         }
 
         playerManager = FindObjectOfType<PlayerManager>();
-        playerManager.Players.Add(this);
+        playerManager.AddPlayer(this);
         AudioSource = GetComponent<AudioSource>();
+
+        if (isLocalPlayer) {
+            gameObject.AddComponent<AudioListener>();
+        }
     }
 
     void Update() {

@@ -88,24 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerMovementTeun.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerMovementTeun.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Teun/Scripts/PlayerMovementTeun.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="330">
+              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
-                <marker date="1541768101098" expanded="false" signature="6:154" ph="..." />
-                <marker date="1541768101098" expanded="true" signature="207:1008" ph="{...}" />
-                <marker date="1541768101098" expanded="true" signature="392:654" ph="{...}" />
-                <marker date="1541768101098" expanded="true" signature="452:496" ph="{...}" />
-                <marker date="1541768101098" expanded="true" signature="674:1006" ph="{...}" />
-                <marker date="1541768101098" expanded="true" signature="704:735" ph="{...}" />
+                <marker date="1541768648589" expanded="false" signature="6:154" ph="..." />
+                <marker date="1541768648589" expanded="true" signature="207:1100" ph="{...}" />
+                <marker date="1541768648589" expanded="true" signature="392:746" ph="{...}" />
+                <marker date="1541768648589" expanded="true" signature="452:496" ph="{...}" />
+                <marker date="1541768648589" expanded="true" signature="675:740" ph="{...}" />
+                <marker date="1541768648589" expanded="true" signature="766:1098" ph="{...}" />
+                <marker date="1541768648589" expanded="true" signature="796:827" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Teun/Scripts/PlayerManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -167,8 +168,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Field of View/Light.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Field of View/FieldOfView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Field of View/Visibility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Teun/Scripts/PlayerMovementTeun.cs" />
         <option value="$PROJECT_DIR$/Assets/Teun/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Teun/Scripts/PlayerMovementTeun.cs" />
       </list>
     </option>
   </component>
@@ -254,7 +255,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19243000" />
+    <option name="totallyTimeSpent" value="19570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,12 +671,13 @@
         <state relative-caret-position="135">
           <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <marker date="1541768101098" expanded="false" signature="6:154" ph="..." />
-            <marker date="1541768101098" expanded="true" signature="207:1008" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="392:654" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="452:496" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="674:1006" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="704:735" ph="{...}" />
+            <marker date="1541768648589" expanded="false" signature="6:154" ph="..." />
+            <marker date="1541768648589" expanded="true" signature="207:1100" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="392:746" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="452:496" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="675:740" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="766:1098" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="796:827" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1073,21 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Teun/Scripts/PlayerMovementTeun.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <marker date="1541768101098" expanded="false" signature="6:154" ph="..." />
-            <marker date="1541768101098" expanded="true" signature="207:1008" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="392:654" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="452:496" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="674:1006" ph="{...}" />
-            <marker date="1541768101098" expanded="true" signature="704:735" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Teun/Scripts/PlayerManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1097,6 +1084,22 @@
             <marker date="1541768323470" expanded="true" signature="123:479" ph="{...}" />
             <marker date="1541768323470" expanded="true" signature="259:477" ph="{...}" />
             <marker date="1541768323470" expanded="true" signature="414:471" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Teun/Scripts/PlayerMovementTeun.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <marker date="1541768648589" expanded="false" signature="6:154" ph="..." />
+            <marker date="1541768648589" expanded="true" signature="207:1100" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="392:746" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="452:496" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="675:740" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="766:1098" ph="{...}" />
+            <marker date="1541768648589" expanded="true" signature="796:827" ph="{...}" />
           </folding>
         </state>
       </provider>
